@@ -1,6 +1,8 @@
 package net.JJ.mutminecraft;
 
 import com.mojang.logging.LogUtils;
+import net.JJ.mutminecraft.item.ModCreativeModTabs;
+import net.JJ.mutminecraft.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -40,13 +42,14 @@ public class MutantMinecraft {
     public MutantMinecraft() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Register the commonSetup method for modloading
+        ModCreativeModTabs.register(modEventBus);
+
+        ModItems.register((modEventBus));
+
         modEventBus.addListener(this::commonSetup);
 
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
     }
 
@@ -54,9 +57,12 @@ public class MutantMinecraft {
 
     }
 
-    // Add the example block item to the building blocks tab
+    // Adding items to existing creative tabs
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.MUTANTBONE);
+            event.accept(ModItems.MUTANTBONEMEAL);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
