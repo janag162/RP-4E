@@ -20,6 +20,9 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.MUTANTBONE.get());
                         pOutput.accept(ModItems.MUTANTBONEMEAL.get());
+                        pOutput.accept(ModItems.ECTOPLASM.get());
+                        pOutput.accept(ModItems.BESTIARY.get());
+
                     })
                     .build());
 

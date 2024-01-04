@@ -11,10 +11,14 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, MutantMinecraft.MOD_ID);
 
-    // Barebones object
+    // Barebones objects
     public static final RegistryObject<Item> MUTANTBONE = ITEMS.register("mutantbone",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MUTANTBONEMEAL = ITEMS.register("mutantbonemeal",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ECTOPLASM = ITEMS.register("ectoplasm",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BESTIARY = ITEMS.register("bestiary",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
