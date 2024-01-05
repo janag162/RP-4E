@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mutminecraft:item/direwolf_fang"
+    "layer0": "mutminecraft:item/direwolf/direwolf_fang"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mutminecraft:item/plasmic_treat"
+    "layer0": "mutminecraft:item/direwolf/ectoplasm_treat"
   }
 }
