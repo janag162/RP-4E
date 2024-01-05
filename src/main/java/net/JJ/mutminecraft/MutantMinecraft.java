@@ -60,7 +60,7 @@ public class MutantMinecraft {
     // Adding items to existing creative tabs
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            //event.accept(ModItems.MUTANTBONE);
+            //event.accept(ModItems.MUTANT_BONE);
         }
     }
 

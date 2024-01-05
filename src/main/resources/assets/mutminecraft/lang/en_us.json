@@ -1,8 +1,20 @@
 {
-  "item.mutminecraft.mutantbone": "Mutant Bone",
-  "item.mutminecraft.mutantbonemeal": "Shifting Bonemeal",
+  "item.mutminecraft.mutant_bone": "Mutant Bone",
+  "item.mutminecraft.mutant_bonemeal": "Shifting Bonemeal",
   "item.mutminecraft.ectoplasm": "Ecoplasm",
   "item.mutminecraft.bestiary": "Ancient Bestiary",
+  "item.mutminecraft.bud": "Ectoplasmic Bud",
+  "item.mutminecraft.cooked_meat": "Cooked Mutant Meat",
+  "item.mutminecraft.direwolf_fang": "Direwolf Fang",
+  "item.mutminecraft.direwolf_fur": "Direwolf Fur",
+  "item.mutminecraft.direwolf_pelt": "Direwolf Pelt",
+  "item.mutminecraft.fang_shard": "Direwolf Fang Shard",
+  "item.mutminecraft.filled_bud": "Soul-Filled Ectoplasmic Bud",
+  "item.mutminecraft.plasmic_treat": "Plasmic Treat",
+  "item.mutminecraft.raw_meat": "Raw Mutant Meat",
+  "item.mutminecraft.seedling": "Infernal Seedling",
+  "item.mutminecraft.soul": "Soul",
+  "item.mutminecraft.treat": "Direwolf Treat",
 
 
   "creativetab.mod_tab": "Mutant Minecraft"

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mutminecraft:item/mutantbonemeal"
+    "layer0": "mutminecraft:item/fang_shard"
   }
 }

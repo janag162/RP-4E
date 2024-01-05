@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mutminecraft:item/cooked_meat"
+  }
+}

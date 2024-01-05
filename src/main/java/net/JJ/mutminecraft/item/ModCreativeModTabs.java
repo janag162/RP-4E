@@ -15,16 +15,30 @@ public class ModCreativeModTabs {
 
     // Creating a custom tab of the mod + adding items to it
     public static final RegistryObject<CreativeModeTab> TUTORIAL_TAB = CREATIVE_MODE_TABS.register("mod_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MUTANTBONE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MUTANT_BONE.get()))
                     .title(Component.translatable("creativetab.mod_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.MUTANTBONE.get());
-                        pOutput.accept(ModItems.MUTANTBONEMEAL.get());
-                        pOutput.accept(ModItems.ECTOPLASM.get());
-                        pOutput.accept(ModItems.BESTIARY.get());
 
-                    })
-                    .build());
+                        pOutput.accept(ModItems.BESTIARY.get());
+                        pOutput.accept(ModItems.ECTOPLASM.get());
+                        pOutput.accept(ModItems.SEEDLING.get());
+                        pOutput.accept(ModItems.SOUL.get());
+                        pOutput.accept(ModItems.BUD.get());
+                        pOutput.accept(ModItems.FILLED_BUD.get());
+                        pOutput.accept(ModItems.RAW_MEAT.get());
+                        pOutput.accept(ModItems.COOKED_MEAT.get());
+                        pOutput.accept(ModItems.MUTANT_BONE.get());
+                        pOutput.accept(ModItems.MUTANT_BONEMEAL.get());
+
+                        // Direwolf items
+                        pOutput.accept(ModItems.DIREWOLF_FANG.get());
+                        pOutput.accept(ModItems.DIREWOLF_FUR.get());
+                        pOutput.accept(ModItems.DIREWOLF_PELT.get());
+                        pOutput.accept(ModItems.FANG_SHARD.get());
+                        pOutput.accept(ModItems.TREAT.get());
+                        pOutput.accept(ModItems.PLASMIC_TREAT.get());
+
+                    }).build());
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
