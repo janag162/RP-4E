@@ -31,12 +31,13 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.MUTANT_BONEMEAL.get());
 
                         // Direwolf items
+                        pOutput.accept(ModItems.DIREWOLF_EGG.get());
                         pOutput.accept(ModItems.DIREWOLF_FANG.get());
                         pOutput.accept(ModItems.DIREWOLF_FUR.get());
                         pOutput.accept(ModItems.DIREWOLF_PELT.get());
                         pOutput.accept(ModItems.FANG_SHARD.get());
                         pOutput.accept(ModItems.TREAT.get());
-                        pOutput.accept(ModItems.PLASMIC_TREAT.get());
+                        pOutput.accept(ModItems.ECTOPLASM_TREAT.get());
 
                     }).build());
 

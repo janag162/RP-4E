@@ -38,11 +38,13 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TREAT = ITEMS.register("treat",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLASMIC_TREAT = ITEMS.register("plasmic_treat",
+    public static final RegistryObject<Item> ECTOPLASM_TREAT = ITEMS.register("ectoplasm_treat",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SEEDLING = ITEMS.register("seedling",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SOUL = ITEMS.register("soul",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DIREWOLF_EGG = ITEMS.register("direwolf_egg",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
