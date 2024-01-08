@@ -38,6 +38,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.FANG_SHARD.get());
                         pOutput.accept(ModItems.TREAT.get());
                         pOutput.accept(ModItems.ECTOPLASM_TREAT.get());
+                        pOutput.accept(ModItems.FANG_BLADE.get());
+                        pOutput.accept(ModItems.FANG_ARROW.get());
 
                     }).build());
 

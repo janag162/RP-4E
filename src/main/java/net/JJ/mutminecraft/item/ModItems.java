@@ -46,6 +46,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DIREWOLF_EGG = ITEMS.register("direwolf_egg",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FANG_BLADE = ITEMS.register("fang_blade",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FANG_ARROW = ITEMS.register("fang_arrow",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
