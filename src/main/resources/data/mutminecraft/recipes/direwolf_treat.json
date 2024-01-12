@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "tag": "mutminecraft:meats"
+    },
+    "B": {
+      "tag": "mutminecraft:bones"
+    }
+  },
+  "pattern": [
+    "MMM",
+    "MBM",
+    "BMM"
+  ],
+  "result": {
+    "item": "mutminecraft:direwolf_treat"
+  }
+}

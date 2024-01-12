@@ -29,6 +29,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.COOKED_MEAT.get());
                         pOutput.accept(ModItems.MUTANT_BONE.get());
                         pOutput.accept(ModItems.MUTANT_BONEMEAL.get());
+                        pOutput.accept(ModItems.LEATHER_STRIPS.get());
 
                         // Direwolf items
                         pOutput.accept(ModItems.DIREWOLF_EGG.get());

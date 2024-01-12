@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mutminecraft:direwolf_fang"
+    }
+  ],
+  "result": {
+    "item": "mutminecraft:fang_shard",
+    "count": 4
+  }
+}

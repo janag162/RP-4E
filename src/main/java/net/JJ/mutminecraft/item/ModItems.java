@@ -50,6 +50,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FANG_ARROW = ITEMS.register("fang_arrow",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LEATHER_STRIPS = ITEMS.register("leather_strips",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

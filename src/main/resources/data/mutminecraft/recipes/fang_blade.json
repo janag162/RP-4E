@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " F ",
+    "SIS",
+    " T "
+  ],
+  "key": {
+    "F": {
+      "item": "mutminecraft:direwolf_fang"
+    },
+    "S": {
+      "item": "mutminecraft:leather_strips"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "mutminecraft:fang_blade",
+    "count": 1
+  }
+}
