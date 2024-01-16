@@ -4,6 +4,7 @@
     "minecraft:beef",
     "minecraft:porkchop",
     "minecraft:rabbit",
-    "minecraft:chicken"
+    "minecraft:chicken",
+    "mutminecraft:raw_meat"
   ]
 }

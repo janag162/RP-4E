@@ -19,9 +19,9 @@ public class ModItems {
     public static final RegistryObject<Item> ECTOPLASM = ITEMS.register("ectoplasm",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BESTIARY = ITEMS.register("bestiary",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_MEAT)));
     public static final RegistryObject<Item> RAW_MEAT = ITEMS.register("raw_meat",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_MEAT)));
     public static final RegistryObject<Item> COOKED_MEAT = ITEMS.register("cooked_meat",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DIREWOLF_FANG = ITEMS.register("direwolf_fang",
