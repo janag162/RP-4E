@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "mutminecraft:ectoplasm"
+    },
+    {
+      "item": "mutminecraft:mutant_bonemeal"
+    }
+  ],
+  "result": {
+    "item": "mutminecraft:bestiary"
+  }
+}
+
