@@ -3,21 +3,18 @@
   "category": "misc",
   "pattern": [
     " F ",
-    "SIS",
-    " T "
+    " L ",
+    " S "
   ],
   "key": {
     "F": {
       "item": "mutminecraft:direwolf_fang"
     },
-    "S": {
+    "L": {
       "item": "mutminecraft:leather_strips"
     },
-    "T": {
+    "S": {
       "item": "minecraft:stick"
-    },
-    "I": {
-      "item": "minecraft:iron_ingot"
     }
   },
   "result": {
