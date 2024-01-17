@@ -19,11 +19,11 @@ public class ModItems {
     public static final RegistryObject<Item> ECTOPLASM = ITEMS.register("ectoplasm",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BESTIARY = ITEMS.register("bestiary",
-            () -> new Item(new Item.Properties().food(ModFoods.COOKED_MEAT)));
+            () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> RAW_MEAT = ITEMS.register("raw_meat",
             () -> new Item(new Item.Properties().food(ModFoods.RAW_MEAT)));
     public static final RegistryObject<Item> COOKED_MEAT = ITEMS.register("cooked_meat",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_MEAT)));
     public static final RegistryObject<Item> DIREWOLF_FANG = ITEMS.register("direwolf_fang",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FANG_SHARD = ITEMS.register("fang_shard",
@@ -33,9 +33,9 @@ public class ModItems {
     public static final RegistryObject<Item> DIREWOLF_PELT = ITEMS.register("direwolf_pelt",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BUD = ITEMS.register("bud",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> FILLED_BUD = ITEMS.register("filled_bud",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> TREAT = ITEMS.register("treat",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ECTOPLASM_TREAT = ITEMS.register("ectoplasm_treat",
@@ -47,9 +47,9 @@ public class ModItems {
     public static final RegistryObject<Item> DIREWOLF_EGG = ITEMS.register("direwolf_egg",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FANG_BLADE = ITEMS.register("fang_blade",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> FANG_ARROW = ITEMS.register("fang_arrow",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> LEATHER_STRIPS = ITEMS.register("leather_strips",
             () -> new Item(new Item.Properties()));
 

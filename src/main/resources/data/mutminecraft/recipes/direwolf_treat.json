@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "M": {
-      "tag": "mutminecraft:meats"
+      "tag": "mutminecraft:treat_usable_meats"
     },
     "B": {
-      "tag": "mutminecraft:bones"
+      "item": "minecraft:bone"
     }
   },
   "pattern": [
@@ -15,6 +15,7 @@
     "BMM"
   ],
   "result": {
-    "item": "mutminecraft:direwolf_treat"
+    "item": "mutminecraft:treat",
+    "count": 1
   }
 }
