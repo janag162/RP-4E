@@ -41,6 +41,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.ECTOPLASM_TREAT.get());
                         pOutput.accept(ModItems.FANG_BLADE.get());
                         pOutput.accept(ModItems.FANG_ARROW.get());
+                        pOutput.accept(ModItems.DIREWOLF_CLOAK.get());
 
                     }).build());
 
