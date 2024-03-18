@@ -15,7 +15,7 @@ public class ModCreativeModTabs {
 
     // Creating a custom tab of the mod + adding items to it
     public static final RegistryObject<CreativeModeTab> TUTORIAL_TAB = CREATIVE_MODE_TABS.register("mod_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MUTANT_BONE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BESTIARY.get()))
                     .title(Component.translatable("creativetab.mod_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
@@ -32,7 +32,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.LEATHER_STRIPS.get());
 
                         // Direwolf items
-                        pOutput.accept(ModItems.DIREWOLF_EGG.get());
+                        pOutput.accept(ModItems.DIREWOLF_SPAWN_EGG.get());
                         pOutput.accept(ModItems.DIREWOLF_FANG.get());
                         pOutput.accept(ModItems.DIREWOLF_FUR.get());
                         pOutput.accept(ModItems.DIREWOLF_PELT.get());

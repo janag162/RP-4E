@@ -1,9 +1,12 @@
 package net.JJ.mutminecraft;
 
 import com.mojang.logging.LogUtils;
+import net.JJ.mutminecraft.entity.ModEntities;
+import net.JJ.mutminecraft.entity.client.DirewolfRenderer;
 import net.JJ.mutminecraft.item.ModCreativeModTabs;
 import net.JJ.mutminecraft.item.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -44,8 +47,8 @@ public class MutantMinecraft {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModTabs.register(modEventBus);
-
-        ModItems.register((modEventBus));
+        ModItems.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         GeckoLib.initialize();
 
@@ -76,7 +79,7 @@ public class MutantMinecraft {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            
+            EntityRenderers.register(ModEntities.DIREWOLF.get(), DirewolfRenderer::new);
         }
     }
 }
