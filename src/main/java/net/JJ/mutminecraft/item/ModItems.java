@@ -1,8 +1,10 @@
 package net.JJ.mutminecraft.item;
 
 import net.JJ.mutminecraft.MutantMinecraft;
+import net.JJ.mutminecraft.entity.ModEntities;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -37,6 +39,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
 
+    public static final RegistryObject<Item> DIREWOLF_SPAWN_EGG = ITEMS.register("direwolf_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.DIREWOLF, 0x7e6988, 0xc5d1c5, new Item.Properties()));
     public static final RegistryObject<Item> DIREWOLF_FANG = ITEMS.register("direwolf_fang",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FANG_SHARD = ITEMS.register("fang_shard",
@@ -48,8 +52,6 @@ public class ModItems {
     public static final RegistryObject<Item> TREAT = ITEMS.register("treat",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ECTOPLASM_TREAT = ITEMS.register("ectoplasm_treat",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DIREWOLF_EGG = ITEMS.register("direwolf_egg",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FANG_BLADE = ITEMS.register("fang_blade",
             () -> new Item(new Item.Properties().stacksTo(1)));

@@ -1,0 +1,6 @@
+{
+  "parent": "item/template_spawn_egg",
+  "textures": {
+    "layer1": "mutminecraft:item/direwolf/direwolf_egg"
+  }
+}
