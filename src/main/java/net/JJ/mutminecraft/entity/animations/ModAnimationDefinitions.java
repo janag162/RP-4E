@@ -1,12 +1,15 @@
 package net.JJ.mutminecraft.entity.animations;
 
+import net.JJ.mutminecraft.entity.custom.DirewolfEntity;
 import net.minecraft.client.animation.AnimationChannel;
 import net.minecraft.client.animation.AnimationDefinition;
 import net.minecraft.client.animation.Keyframe;
 import net.minecraft.client.animation.KeyframeAnimations;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 
 public class ModAnimationDefinitions {
-
 
     public static final AnimationDefinition DIREWOLF_SITTING = AnimationDefinition.Builder.withLength(7.75f).looping()
             .addAnimation("body",

@@ -151,6 +151,7 @@ public class DirewolfModel<T extends Entity> extends HierarchicalModel<T> {
 
 		this.animateWalk(ModAnimationDefinitions.DIREWOLF_WALK, limbSwing, limbSwingAmount, 2f, 2.75f);
 		this.animate(((DirewolfEntity) entity).idleAnimationState, ModAnimationDefinitions.DIREWOLF_IDLE, ageInTicks, 1f);
+		this.animate(((DirewolfEntity) entity).attackAnimationState, ModAnimationDefinitions.DIREWOLF_ATTACK, ageInTicks, 1f);
 	}
 	private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {
 		pNetHeadYaw = Mth.clamp(pNetHeadYaw, -30.0F, 30.0F);
