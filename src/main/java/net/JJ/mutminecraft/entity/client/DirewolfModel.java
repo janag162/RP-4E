@@ -12,8 +12,9 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.util.Mth;
+import net.minecraft.world.entity.Entity;
 
-public class DirewolfModel<T extends DirewolfEntity> extends HierarchicalModel<T> {
+public class DirewolfModel<T extends Entity> extends HierarchicalModel<T> {
 	private final ModelPart body;
 	private final ModelPart head;
 
@@ -148,7 +149,7 @@ public class DirewolfModel<T extends DirewolfEntity> extends HierarchicalModel<T
 		this.root().getAllParts().forEach(ModelPart::resetPose);
 		this.applyHeadRotation(netHeadYaw, headPitch, ageInTicks);
 
-		this.animateWalk(ModAnimationDefinitions.DIREWOLF_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
+		this.animateWalk(ModAnimationDefinitions.DIREWOLF_WALK, limbSwing, limbSwingAmount, 2f, 2.75f);
 		this.animate(((DirewolfEntity) entity).idleAnimationState, ModAnimationDefinitions.DIREWOLF_IDLE, ageInTicks, 1f);
 	}
 	private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {

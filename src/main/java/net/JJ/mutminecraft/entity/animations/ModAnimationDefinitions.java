@@ -7,6 +7,7 @@ import net.minecraft.client.animation.KeyframeAnimations;
 
 public class ModAnimationDefinitions {
 
+
     public static final AnimationDefinition DIREWOLF_SITTING = AnimationDefinition.Builder.withLength(7.75f).looping()
             .addAnimation("body",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
@@ -1419,31 +1420,29 @@ public class ModAnimationDefinitions {
                                     AnimationChannel.Interpolations.LINEAR)))
             .addAnimation("b_r_paw",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
-                            new Keyframe(0f, KeyframeAnimations.posVec(0f, 0.7f, 0f),
+                            new Keyframe(0f, KeyframeAnimations.posVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(1.25f, KeyframeAnimations.posVec(0f, 0.1f, -0.4f),
                                     AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(2.5f, KeyframeAnimations.posVec(0f, 0.1f, 0.6f),
                                     AnimationChannel.Interpolations.LINEAR),
+                            new Keyframe(2.6766665f, KeyframeAnimations.posVec(0f, 0.7f, 0f),
+                                    AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(2.75f, KeyframeAnimations.posVec(0f, 0.7f, 0f),
                                     AnimationChannel.Interpolations.LINEAR)))
             .addAnimation("b_r_paw",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
-                            new Keyframe(0f, KeyframeAnimations.degreeVec(-621.74f, 17.67f, -455.38f),
+                            new Keyframe(0f, KeyframeAnimations.degreeVec(80.74f, 19.64f, -80.68f),
                                     AnimationChannel.Interpolations.LINEAR),
-                            new Keyframe(0.5f, KeyframeAnimations.degreeVec(-532.93f, 1.41f, -543.9f),
+                            new Keyframe(0.5416766f, KeyframeAnimations.degreeVec(169.59f, 1.75f, -168.62f),
                                     AnimationChannel.Interpolations.LINEAR),
-                            new Keyframe(1.25f, KeyframeAnimations.degreeVec(-459f, 16.19f, -618.85f),
+                            new Keyframe(1.25f, KeyframeAnimations.degreeVec(-81.51f, 17.18f, 84.38f),
                                     AnimationChannel.Interpolations.LINEAR),
-                            new Keyframe(1.6766667f, KeyframeAnimations.degreeVec(-606.52f, 9.02f, -472.82f),
+                            new Keyframe(1.75f, KeyframeAnimations.degreeVec(86f, 51.58f, -90.44f),
                                     AnimationChannel.Interpolations.LINEAR),
-                            new Keyframe(2f, KeyframeAnimations.degreeVec(-627.08f, 59.03f, -449f),
+                            new Keyframe(2.25f, KeyframeAnimations.degreeVec(-16.48f, 3.39f, 16.05f),
                                     AnimationChannel.Interpolations.LINEAR),
-                            new Keyframe(2.25f, KeyframeAnimations.degreeVec(-668.75f, 10.91f, -405.25f),
-                                    AnimationChannel.Interpolations.LINEAR),
-                            new Keyframe(2.5f, KeyframeAnimations.degreeVec(-485.57f, 4.3f, -592f),
-                                    AnimationChannel.Interpolations.LINEAR),
-                            new Keyframe(2.75f, KeyframeAnimations.degreeVec(-621.74f, 17.67f, -455.38f),
+                            new Keyframe(2.75f, KeyframeAnimations.degreeVec(81.74f, 17.67f, -79.62f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
     public static final AnimationDefinition DIREWOLF_IDLE = AnimationDefinition.Builder.withLength(2f).looping()
             .addAnimation("upper_body",
@@ -1575,6 +1574,10 @@ public class ModAnimationDefinitions {
                             new Keyframe(1f, KeyframeAnimations.posVec(0f, 0f, 0.15f),
                                     AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(2f, KeyframeAnimations.posVec(0f, 0f, 0f),
+                                    AnimationChannel.Interpolations.LINEAR)))
+            .addAnimation("b_r_paw",
+                    new AnimationChannel(AnimationChannel.Targets.ROTATION,
+                            new Keyframe(0f, KeyframeAnimations.degreeVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
     public static final AnimationDefinition DIREWOLF_ATTACK = AnimationDefinition.Builder.withLength(0.5f)
             .addAnimation("upper_body",

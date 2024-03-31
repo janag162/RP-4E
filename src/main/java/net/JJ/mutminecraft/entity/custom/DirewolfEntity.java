@@ -54,6 +54,7 @@ public class DirewolfEntity extends Animal {
         } else {
             f = 0f;
         }
+        this.walkAnimation.update(f, 0.2f);
     }
 
     @Override
