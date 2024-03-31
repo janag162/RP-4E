@@ -8,8 +8,8 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 
 public class DirewolfAttackGoal extends MeleeAttackGoal {
     private final DirewolfEntity entity;
-    private int attackDelay = 20;
-    private int ticksUntilNextAttack = 20;
+    private int attackDelay = 30;
+    private int ticksUntilNextAttack = 30;
     private boolean countTillNextAttack = false;
 
     public DirewolfAttackGoal(PathfinderMob pMob, double pSpeedModifier, boolean pFollowingTargetEvenIfNotSeen) {

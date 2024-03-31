@@ -10,12 +10,12 @@ import net.minecraft.resources.ResourceLocation;
 
 public class DirewolfRenderer extends MobRenderer<DirewolfEntity, DirewolfModel<DirewolfEntity>> {
     public DirewolfRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new DirewolfModel<>(pContext.bakeLayer(ModModelLayers.DIREWOLF_LAYER)), 2);
+        super(pContext, new DirewolfModel<>(pContext.bakeLayer(ModModelLayers.DIREWOLF_LAYER)), 1);
     }
 
     @Override
     public ResourceLocation getTextureLocation(DirewolfEntity direwolfEntity) {
-        return new ResourceLocation(MutantMinecraft.MOD_ID, "textures/item/entity/direwolf_wild.png");
+        return new ResourceLocation(MutantMinecraft.MOD_ID, "textures/entity/direwolf_wild.png");
     }
 
     @Override

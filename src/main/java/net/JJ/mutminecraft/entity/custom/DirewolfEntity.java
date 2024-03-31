@@ -2,6 +2,7 @@ package net.JJ.mutminecraft.entity.custom;
 
 import net.JJ.mutminecraft.entity.ModEntities;
 import net.JJ.mutminecraft.entity.ai.DirewolfAttackGoal;
+import net.JJ.mutminecraft.util.ModTags;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -20,9 +21,9 @@ import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class DirewolfEntity extends Animal {
@@ -55,7 +56,7 @@ public class DirewolfEntity extends Animal {
         }
 
         if (this.isAttacking() && attackAnimationTimeout <= 0) {
-            attackAnimationTimeout = 20; //length in ticks
+            attackAnimationTimeout = 30; //length in ticks
             attackAnimationState.start(tickCount);
         } else {
             --this.attackAnimationTimeout;
@@ -96,9 +97,10 @@ public class DirewolfEntity extends Animal {
 
         this.goalSelector.addGoal(1, new DirewolfAttackGoal(this, 2, true));
         this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
+        this.targetSelector.addGoal(3, (new HurtByTargetGoal(this, new Class[0])).setAlertOthers(new Class[0]));
 
         this.goalSelector.addGoal(1, new BreedGoal(this, 1.15D));
-        this.goalSelector.addGoal(2, new TemptGoal(this, 1.2D, Ingredient.of(Items.BONE), false));
+        this.goalSelector.addGoal(2, new TemptGoal(this, 1.2D, Ingredient.of(ModTags.Items.MUTANT_BONE), false));
 
         this.goalSelector.addGoal(3, new FollowParentGoal(this, 1.1D));
 
@@ -119,14 +121,14 @@ public class DirewolfEntity extends Animal {
     }
 
 
-    //TAMING
+    //Breeding
     @Nullable
     @Override
-    public AgeableMob getBreedOffspring(ServerLevel pLevel, AgeableMob pOtherParent) {
+    public AgeableMob getBreedOffspring(@NotNull ServerLevel pLevel, @NotNull AgeableMob pOtherParent) {
         return ModEntities.DIREWOLF.get().create(pLevel);
     }
     public boolean isFood(ItemStack pStack) {
-        return pStack.is(Items.BONE);
+        return pStack.is(ModTags.Items.DIREWOLF_TREAT);
     }
 
 
@@ -138,7 +140,7 @@ public class DirewolfEntity extends Animal {
     }
     @Nullable
     @Override
-    protected SoundEvent getHurtSound(DamageSource pDamageSource) {
+    protected SoundEvent getHurtSound(@NotNull DamageSource pDamageSource) {
         return SoundEvents.WOLF_HURT;
     }
     @Nullable

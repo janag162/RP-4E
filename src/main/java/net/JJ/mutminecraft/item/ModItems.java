@@ -49,7 +49,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DIREWOLF_PELT = ITEMS.register("direwolf_pelt",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> TREAT = ITEMS.register("treat",
+    public static final RegistryObject<Item> DIREWOLF_TREAT = ITEMS.register("direwolf_treat",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ECTOPLASM_TREAT = ITEMS.register("ectoplasm_treat",
             () -> new Item(new Item.Properties()));
